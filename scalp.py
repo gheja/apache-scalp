@@ -665,7 +665,7 @@ def main(argc, argv):
                 os.mkdir(preferences['odir'])
             except:
                 print "/!\ scalp cannot write in",preferences['odir']
-                print "/!\ Ising /tmp/scalp/ as new directory..."
+                print "/!\ Using /tmp/scalp/ as new directory..."
                 preferences['odir'] = '/tmp/scalp'
                 os.mkdir(preferences['odir'])
         scalper(access, filters, preferences)
