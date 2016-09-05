@@ -660,7 +660,7 @@ def main(argc, argv):
         if len(preferences['output']) < 1:
             preferences['output'] = "text"
         if not os.path.isdir(preferences['odir']):
-            print "The directory %s doesn't exist, scalp will try to create it"
+            print "The directory %s doesn't exist, scalp will try to create it" % preferences['odir']
             try:
                 os.mkdir(preferences['odir'])
             except:
